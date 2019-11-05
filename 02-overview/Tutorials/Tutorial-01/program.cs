@@ -2,9 +2,9 @@ using System;
 
 namespace firstDotnetApp 
 {
-class program 
+public class program 
 {
-static void main(string[] arg)
+public static void Main(string[] arg)
  {
 	Console.WriteLine("hello !!"); 
 
