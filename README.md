@@ -1,3 +1,0 @@
-# Berdia Bulalauri
-
-Berdia Bulalauri
