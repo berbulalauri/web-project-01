@@ -7,6 +7,6 @@ class MainClass {
     var xvar = Console.ReadLine();
     double xdouble = Convert.ToDouble(xvar);
     
-    Console.WriteLine ("result: "+(int)xdouble);
+    Console.WriteLine ("result: "+Convert.ToInt32(xdouble));
   }
 }
