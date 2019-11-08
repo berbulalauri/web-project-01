@@ -10,7 +10,7 @@ namespace tutorial_01
     {
         static void Main(string[] args)
         {
-            BankAccount bankAccount = new BankAccount("bebebe bub");
+            BankAccount bankAccount = new BankAccount("berdia bulalauri");
             //Console.WriteLine(bankAccount.Owner);
             bankAccount.makeDeposit(55.5m);
             bankAccount.makeDeposit(-325.5m);
