@@ -15,13 +15,12 @@ namespace tutorial_02
             var isPasswordValidx = isPasswordValid(userPassword, out var errorMessage);
             var messageToOut = isPasswordValidx ? "Password is valid" : errorMessage;
             Console.WriteLine(messageToOut);
-            Console.ReadLine();
 
         }
         public static bool isPasswordValid(string password, out string errorMessage)
         {
             errorMessage = string.Empty;
-            if(password.Length < PasswordLength)
+            if (password.Length < PasswordLength)
             {
                 errorMessage += $"password must have at least eight characters. {Environment.NewLine}";
             }
@@ -29,22 +28,26 @@ namespace tutorial_02
             if (!isThisOnlyLettersOrDigit(password))
             {
                 errorMessage += $"password must contain letter or digits. {Environment.NewLine}";
-
             }
             if (!doesPasswordContainsRequiredDigit(password, digitCount))
             {
                 errorMessage += $"password must have at least two digits. {Environment.NewLine}";
-
             }
-
-            return false;
+            if (password.Length < PasswordLength || !isThisOnlyLettersOrDigit(password) || !doesPasswordContainsRequiredDigit(password, digitCount))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         private static bool isThisOnlyLettersOrDigit(string password)
         {
-            foreach(var c in password)
+            foreach (var c in password)
             {
-                if (!char.IsLetter(c) || !char.IsDigit(c))
+                if (!char.IsLetterOrDigit(c))
                 {
                     return false;
                 }
@@ -57,7 +60,7 @@ namespace tutorial_02
             int counter = 0;
             foreach (var c in password)
             {
-                if (char.IsDigit(c)) {counter++;}
+                if (char.IsDigit(c)) { counter++; }
 
                 if (counter >= requiredDigitCount) return true;
             }
