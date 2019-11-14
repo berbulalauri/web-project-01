@@ -11,7 +11,7 @@ namespace tutorial_02
         {
 
             FileInfo file=new FileInfo(@"../../../tutorialresult.txt");
-            Console.WriteLine(file);
+            //Console.WriteLine(file);
             try
             {
                 List<string> list = new List<string>();
