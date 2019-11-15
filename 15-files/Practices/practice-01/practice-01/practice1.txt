@@ -1,0 +1,14 @@
+Name C:\
+Type: Fixed
+File system: NTFS
+Total size of drive:      104752738304 bytes 
+Total available space:     56844734464 bytes
+
+Name E:\
+Type: Fixed
+File system: NTFS
+Total size of drive:      395248136192 bytes 
+Total available space:     81779073024 bytes
+
+Name F:\
+Type: Removable
