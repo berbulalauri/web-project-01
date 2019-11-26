@@ -1,0 +1,35 @@
+Bill to:
+maryna makhukina | 222
+Product list:
+14 | Drone Camera | 314 | 12
+Total price: 3768
+Bill to:
+maryna makhukina | 222
+Product list:
+16 | Electric Soldering Iron Gun | 316 | 12
+Total price: 3792
+Bill to:
+maryna makhukina | 222
+Product list:
+12 | Home Security IP Camera | 312 | 12
+Total price: 3744
+Bill to:
+maryna makhukina | 222
+Product list:
+21 | One Piece Swimsuit | 321 | 13
+Total price: 4173
+Bill to:
+maryna makhukina | 222
+Product list:
+12 | Home Security IP Camera | 312 | 12
+Total price: 3744
+Bill to:
+maryna makhukina | 222
+Product list:
+12 | Home Security IP Camera | 312 | 41
+Total price: 12792
+Bill to:
+maryna makhukina | 222
+Product list:
+12 | Home Security IP Camera | 312 | 31
+Total price: 9672
