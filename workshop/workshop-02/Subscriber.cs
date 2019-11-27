@@ -1,6 +1,8 @@
 ﻿using System;
 using workshop2.Tariffs;
 using Newtonsoft.Json;
+using System.Threading.Tasks;
+using workshop2.Helpers;
 
 namespace workshop2
 {
@@ -30,7 +32,7 @@ namespace workshop2
             DateOfBirth = dob;
             Balance = 50;
             IsNeedInternet = isInternetNeed;
-            Tariff = isInternetNeed ? (ITariff)new ZipperTariff() : (ITariff)new CheetahTariff();
+            Tariff = isInternetNeed ? new ZipperTariff() : (ITariff)new CheetahTariff();
             phoneNumber = GeneratePhoneNumber();
         }
 
@@ -62,6 +64,19 @@ namespace workshop2
                 Logger.Log("Subscriber.GeneratePhoneNumber", $" Generated phone number {result} is not unique" );
                 return GeneratePhoneNumber();
 
+        }
+
+        public async Task GenerateSubscribers()
+        {
+            var names = await ApiHelper.GetNameAsync();
+
+            Random random = new Random();
+            Tariff = new BasicTariff();
+            IsNeedInternet = true;
+            DateOfBirth = new DateTime(random.Next(1935, 2004), random.Next(1, 20), random.Next(1, 28));
+            PassportId = "XX0000";
+            FirstName = names.Item1;
+            LastName = names.Item2;
         }
     }
 }
