@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace workshop2
+namespace workshop_02
 {
     public class Logger
     {
@@ -31,3 +31,4 @@ namespace workshop2
 
     }
 }
+
