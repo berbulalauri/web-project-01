@@ -26,6 +26,7 @@ namespace workshop_02
             {4, ()=> { PrintAirPorts().GetAwaiter().GetResult(); } },
             {5, ()=> { AddNewFlight().GetAwaiter().GetResult(); } },
             {6, ()=> { ListAllFlight().GetAwaiter().GetResult(); } },
+            {7, ()=> { ShowUpcomingFlight().GetAwaiter().GetResult(); } },
             {0, ()=> { loopMainMenu = false; } },
         };
 
@@ -45,6 +46,13 @@ namespace workshop_02
         {
 
             MainMenu();
+        }
+        static async Task ShowUpcomingFlight()
+        {
+            var listOfFlight = await jsonFlightFileRepository.ReadAsync();
+            new Scoreboard(listOfFlight);
+
+
         }
 
         static async Task ListAllFlight()
@@ -156,6 +164,7 @@ namespace workshop_02
                         "4. List of airports \n" +
                         "5. Add new flight  \n" +
                         "6. List of flights \n" +
+                        "7. Show Upcoming Flights \n" +
                         "0. Exit ");
                     do
                     {
@@ -386,6 +395,9 @@ namespace workshop_02
             var listFromAirportFile = await jsonAirportFileRepository.ReadAsync();
 
             listFromAirportFile.ForEach(s => Console.WriteLine(s));
+
+            Logger.Log("Program.MakeAirportsGreatAgain method was called", $" Printing all Airports");
+
         }
 
         static async Task PrintAirLines()
@@ -397,6 +409,8 @@ namespace workshop_02
             });
             Console.WriteLine("-----------------------------------------------------------------------------------");
 
+            Logger.Log("Program.PrintAirLines method was called", $" Printing all AirLines");
+
         }
         static async Task PrintAirPorts()
         {
@@ -404,6 +418,8 @@ namespace workshop_02
             Console.WriteLine("-------------------------------List Of Airports------------------------------------");
             listFromAirportFile.ForEach(s => Console.WriteLine(s));
             Console.WriteLine("-----------------------------------------------------------------------------------");
+
+            Logger.Log("Program.PrintAirPorts method was called", $" Printing all Airport");
         }
 
     }

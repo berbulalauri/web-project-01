@@ -1,0 +1,281 @@
+2019-11-29T23:30:27 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Istanbul AtaTurk International Airport
+Airline which is operating in Istanbul is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 10:00:00 AM 2019-11-29T23:30:27 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: London Gatwick International Airport
+Airline which is operating in London is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 1:00:00 PM 2019-11-29T23:30:27 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Geneve International Airport
+Airline which is operating in Geneve is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 12/1/2019 1:25:00 AM 2019-11-29T23:30:27 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Paris Air-Lafaetee International Airport
+Airline which is operating in Paris is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 12:25:00 PM 2019-11-29T23:30:27 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Berlin Intercontinental Airport
+Airline which is operating in Berlin International Airport is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 9:31:00 PM 2019-11-29T23:30:29 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Istanbul AtaTurk International Airport
+Airline which is operating in Istanbul is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 10:00:00 AM 2019-11-29T23:30:29 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: London Gatwick International Airport
+Airline which is operating in London is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 1:00:00 PM 2019-11-29T23:30:29 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Geneve International Airport
+Airline which is operating in Geneve is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 12/1/2019 1:25:00 AM 2019-11-29T23:30:29 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Paris Air-Lafaetee International Airport
+Airline which is operating in Paris is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 12:25:00 PM 2019-11-29T23:30:29 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Berlin Intercontinental Airport
+Airline which is operating in Berlin International Airport is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 9:31:00 PM 2019-11-29T23:30:30 :  Printing all Scoreboard, methods: Airlines.Scoreboard method was called, Exception message: Departure Airport: Tbilisi Arrival Airport: Tbilisi International Airport; IsInternational: 11/30/2019 1:00:00 PM; BindedAirLineToAirport: 4.6 2019-11-29T23:30:32 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Istanbul AtaTurk International Airport
+Airline which is operating in Istanbul is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 10:00:00 AM 2019-11-29T23:30:32 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: London Gatwick International Airport
+Airline which is operating in London is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 1:00:00 PM 2019-11-29T23:30:32 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Geneve International Airport
+Airline which is operating in Geneve is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 12/1/2019 1:25:00 AM 2019-11-29T23:30:32 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Paris Air-Lafaetee International Airport
+Airline which is operating in Paris is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 12:25:00 PM 2019-11-29T23:30:32 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Berlin Intercontinental Airport
+Airline which is operating in Berlin International Airport is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 9:31:00 PM 2019-11-29T23:30:35 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Istanbul AtaTurk International Airport
+Airline which is operating in Istanbul is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 10:00:00 AM 2019-11-29T23:30:35 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: London Gatwick International Airport
+Airline which is operating in London is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 1:00:00 PM 2019-11-29T23:30:35 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Geneve International Airport
+Airline which is operating in Geneve is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 12/1/2019 1:25:00 AM 2019-11-29T23:30:35 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Paris Air-Lafaetee International Airport
+Airline which is operating in Paris is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 12:25:00 PM 2019-11-29T23:30:35 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Berlin Intercontinental Airport
+Airline which is operating in Berlin International Airport is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 9:31:00 PM 2019-11-29T23:30:37 :  Printing all Scoreboard, methods: Airlines.Scoreboard method was called, Exception message: Departure Airport: Tbilisi Arrival Airport: Tbilisi International Airport; IsInternational: 11/30/2019 1:00:00 PM; BindedAirLineToAirport: 4.6 2019-11-29T23:30:42 :  Printing all AirLines, methods: Program.PrintAirLines method was called2019-11-29T23:30:46 :  Printing all Airport, methods: Program.PrintAirPorts method was called2019-11-29T23:35:53 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Istanbul AtaTurk International Airport
+Airline which is operating in Istanbul is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 10:00:00 AM 2019-11-29T23:35:53 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: London Gatwick International Airport
+Airline which is operating in London is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 1:00:00 PM 2019-11-29T23:35:53 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Geneve International Airport
+Airline which is operating in Geneve is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 12/1/2019 1:25:00 AM 2019-11-29T23:35:53 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Paris Air-Lafaetee International Airport
+Airline which is operating in Paris is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 12:25:00 PM 2019-11-29T23:35:53 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Berlin Intercontinental Airport
+Airline which is operating in Berlin International Airport is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 9:31:00 PM 2019-11-29T23:35:55 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Istanbul AtaTurk International Airport
+Airline which is operating in Istanbul is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 10:00:00 AM 2019-11-29T23:35:55 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: London Gatwick International Airport
+Airline which is operating in London is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 1:00:00 PM 2019-11-29T23:35:55 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Geneve International Airport
+Airline which is operating in Geneve is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 12/1/2019 1:25:00 AM 2019-11-29T23:35:55 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Paris Air-Lafaetee International Airport
+Airline which is operating in Paris is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 12:25:00 PM 2019-11-29T23:35:55 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Berlin Intercontinental Airport
+Airline which is operating in Berlin International Airport is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 9:31:00 PM 2019-11-29T23:35:56 :  Printing all Scoreboard, methods: Airlines.Scoreboard method was called, Exception message: Departure Airport: Tbilisi Arrival Airport: Tbilisi International Airport; IsInternational: 11/30/2019 1:00:00 PM; BindedAirLineToAirport: 4.6 2019-11-29T23:35:59 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Istanbul AtaTurk International Airport
+Airline which is operating in Istanbul is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 10:00:00 AM 2019-11-29T23:35:59 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: London Gatwick International Airport
+Airline which is operating in London is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 11/30/2019 1:00:00 PM 2019-11-29T23:35:59 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Tbilisi International Airport
+Airline which is operating in Tbilisi is: LUFTHANSA; ArrivalAirport: Geneve International Airport
+Airline which is operating in Geneve is: LUFTHANSA; FlightAirline: 
+All AirlineName:  Lufthansa
+Aircraft Count:   300
+MaxLuggageWeigth: 300
+Business Class:   False
+Pet Friendlyness: False
+; DepartureDateTime: 12/1/2019 1:25:00 AM 2019-11-29T23:35:59 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Paris Air-Lafaetee International Airport
+Airline which is operating in Paris is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 12:25:00 PM 2019-11-29T23:35:59 :  Printing all Flight, methods: Flight.Flight method was called, Exception message: DepartureAirport: Batumi International Airport
+Airline which is operating in Batumi is: FLYDUBAI; ArrivalAirport: Berlin Intercontinental Airport
+Airline which is operating in Berlin International Airport is: FLYDUBAI; FlightAirline: 
+All AirlineName:  Flydubai
+Aircraft Count:   400
+MaxLuggageWeigth: 500
+Business Class:   True
+Pet Friendlyness: True
+; DepartureDateTime: 12/1/2019 9:31:00 PM 2019-11-29T23:35:59 :  Printing all Scoreboard, methods: Airlines.Scoreboard method was called, Exception message: Departure Airport: Tbilisi Arrival Airport: Tbilisi International Airport; IsInternational: 11/30/2019 1:00:00 PM; BindedAirLineToAirport: 4.6 
