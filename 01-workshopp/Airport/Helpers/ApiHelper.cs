@@ -5,9 +5,9 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using workshop2.Models;
+using workshop_02.Models;
 
-namespace workshop2.Helpers
+namespace workshop_02.Helpers
 {
     class ApiHelper
     {
@@ -28,3 +28,4 @@ namespace workshop2.Helpers
         }
     }
 }
+

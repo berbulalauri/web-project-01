@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace workshop2.Repositories
+namespace workshop_02.Repositories
 {
     public interface IRepository<T>
     {
@@ -11,3 +11,4 @@ namespace workshop2.Repositories
         T Read();
     }
 }
+

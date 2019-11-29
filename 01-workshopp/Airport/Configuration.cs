@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace workshop2
+namespace workshop_02
 {
     public class Configuration
     {
@@ -10,3 +10,4 @@ namespace workshop2
         public static string LogPath { get; set; } = $"../../../subscribersLog.json";
     }
 }
+
