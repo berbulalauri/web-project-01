@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace workshop2.Repositories
+namespace workshop_02.Repositories
 {
     public class JsonFileRepository<T> : IRepository<T>
     {
@@ -21,10 +21,10 @@ namespace workshop2.Repositories
             {
                 await File.WriteAllTextAsync(FilePath, serializedData);
             }
-            catch (Exception ex)
+            catch (JsonSerializationException ex)
             {
-                Console.WriteLine(ex.Message);
-                Logger.Log("JsonFileRepository.CreateAsync", ex.Message, serializedData);
+                Console.WriteLine($"There is some problem with serialization {ex.Message}");
+                Logger.Log("There is some problem with serialization", ex.Message, serializedData);
 
                 throw;
             }
@@ -38,10 +38,11 @@ namespace workshop2.Repositories
                 var data = JsonConvert.DeserializeObject<T>(dataFromFile);
                 return data;
             }
-            catch (Exception ex)
+            catch (JsonSerializationException ex)
             {
+                Console.WriteLine($"There is some problem with Deserialization {ex.Message}");
                 Logger.Log("JsonFileRepository.ReadAsync", ex.Message, dataFromFile);
-                Console.WriteLine(ex.Message);
+
                 throw;
             }
         }
@@ -52,10 +53,12 @@ namespace workshop2.Repositories
             {
                 File.WriteAllText(FilePath, serializedData);
             }
-            catch (Exception ex)
+            catch (JsonSerializationException ex)
             {
+                Console.WriteLine($"There is some problem with serialization {ex.Message}");
                 Logger.Log("JsonFileRepository.Create", ex.Message, serializedData);
-                Console.WriteLine($"something went wrong " +ex.Message);
+                //Console.WriteLine($"something went wrong " +ex.Message);
+
                 throw;
             }
         }
@@ -67,10 +70,12 @@ namespace workshop2.Repositories
                 var data = JsonConvert.DeserializeObject<T>(dataFromFile);
                 return data;
             }
-            catch (Exception ex)
+            catch (JsonSerializationException ex)
             {
+                Console.WriteLine($"There is some problem with Deserialization {ex.Message}");
                 Logger.Log("JsonFileRepository.Read", ex.Message, dataFromFile);
-                Console.WriteLine(ex.Message);
+                //Console.WriteLine(ex.Message);
+
                 throw;
             }
         }
@@ -79,3 +84,4 @@ namespace workshop2.Repositories
 
     }
 }
+
