@@ -7,7 +7,7 @@ namespace workshop_02
     public class Configuration
     {
         public static string FileName { get; set; } = "../../../subscribers.json";
-        public static string LogPath { get; set; } = $"../../../subscribersLog.json";
+        public static string LogPath { get; set; } = $"../../../AirportLogFile.log";
     }
 }
 

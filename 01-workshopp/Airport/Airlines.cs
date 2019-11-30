@@ -6,6 +6,7 @@ using workshop_02.Helpers;
 using workshop2.Helpers;
 using System.Collections.Generic;
 using System.Text;
+using workshop_02;
 
 namespace workshop2
 {
@@ -32,6 +33,8 @@ namespace workshop2
             IsPetFriendly = isPetFriendly;
             //AirlineType = isRegularAirLine ? new Regular(maxLugWeigth, isBusinessAvail, isPetFriendly) : (AirLineInterface)new Lowcost(maxLugWeigth);
             RegularOrLowcost = isRegularAirLine ? new Regular(maxLugWeigth, isBusinessAvail, isPetFriendly) : (AirLineTypes)new Lowcost(maxLugWeigth);
+
+            Logger.Log("Airlines.Airlines method was called", $" Printing all Airlines", $"AirlineName: {AirlineName}; AircraftCount: {AircraftCount}; MaxLuggageWeigth: {MaxLuggageWeigth}; IsBusinessAvailiable: {IsBusinessAvailiable} ");
         }
 
         public override string ToString()

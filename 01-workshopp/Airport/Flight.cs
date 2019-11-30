@@ -22,7 +22,10 @@ namespace workshop2
                 FlightAirline = flightAirline;
                 DepartureDateTime = departureDateTime;
                 FlightTime = flightTime;
+
+            Logger.Log("Flight.Flight method was called", $" Printing all Flight", $"DepartureAirport: {DepartureAirport}; ArrivalAirport: {ArrivalAirport}; FlightAirline: {FlightAirline}; DepartureDateTime: {DepartureDateTime} ");
         }
+
         public override string ToString()
         {
             return  $"Departure: International Airport in {DepartureAirport.City}: {DepartureAirport.Name}\n" +

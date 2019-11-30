@@ -24,6 +24,8 @@ namespace workshop_02
             IsInternational = isInternational;
             BindedAirLineToAirport = bindedAirLineToAirport;
             //Tariff = isInternetNeed ? (ITariff)new ZipperTariff() : (ITariff)new CheetahTariff();
+
+            Logger.Log("Airport.Airport method was called", $" Printing all Airport", $"Name: {Name} City: {City}; IsInternational: {IsInternational}; BindedAirLineToAirport: {BindedAirLineToAirport} ");
         }
         public override string ToString()
         {
@@ -33,9 +35,8 @@ namespace workshop_02
 
             return $"{Name}\n" +
                 $"{BindedString}";
-            //return $"{printAnswer} airport in {City}: {Name} \n" +
-            //    $"{BindedString}";
         }
+
     }
 }
 
