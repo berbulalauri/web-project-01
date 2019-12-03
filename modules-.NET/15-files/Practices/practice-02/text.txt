@@ -1,0 +1,15 @@
+update All Json to current user number
+
+Increment_Others_OWE_You
+Decrement_You_OWE_Others
+
+UpdateUserWhenRegistering automatic
+
+billpayer Others_OWE_You money send to resp. position.
+
+
+Increment_Others_OWE_You - Decrement_You_OWE_Others calculation
+
+updating user info UpdatingCustomerInfo
+
+home page
