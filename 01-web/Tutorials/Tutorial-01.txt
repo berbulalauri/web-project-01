@@ -1,0 +1,45 @@
+REQUEST FOR GET:
+POST /api/v1/create HTTP/1.1
+Host: dummy.restapiexample.com
+cache-control: no-cache
+Postman-Token: 54f7fecc-fd43-41e8-9b12-b9230bb6c132
+
+{"name":"bberdia","salary":"10000000","age":"27"}
+
+RESPONSE:
+{"name":"bberdia","salary":"10000000","age":"27","id":"1955"}
+
+
+
+REQUEST FOR POST:
+GET /api/v1/employee/1955 HTTP/1.1
+Host: dummy.restapiexample.com
+cache-control: no-cache
+Postman-Token: 89d7e788-db35-4096-931b-de243c5da002
+{"name":"bberdia","salary":"10000000","age":"27"}
+
+RESPONSE:
+{"id":"1955","employee_name":"bberdia","employee_salary":"10000000","employee_age":"27","profile_image":""}
+
+
+REQUEST FOR UPDATE:
+PUT /api/v1/update/1955 HTTP/1.1
+Host: dummy.restapiexample.com
+cache-control: no-cache
+Postman-Token: ef63d5d0-062a-46e2-a0ca-78fffea43509
+
+{"id":"1955","employee_name":"berdia bulalauri","employee_salary":"100000000000","employee_age":"27","profile_image":"https://lyricstranslate.com/files/styles/large/public/1948%20mikhail%20shufutinsky%20RUS%20singer.jpg?itok=p1Tr1NJL"}
+
+RESPONSE:
+{"id":"1955","employee_name":"berdia bulalauri","employee_salary":"100000000000","employee_age":"27","profile_image":"https:\/\/lyricstranslate.com\/files\/styles\/large\/public\/1948%20mikhail%20shufutinsky%20RUS%20singer.jpg?itok=p1Tr1NJL","name":null,"salary":null,"age":null}
+
+
+REQUEST FOR DELETE:
+DELETE /api/v1/delete/1955 HTTP/1.1
+Host: dummy.restapiexample.com
+cache-control: no-cache
+Postman-Token: 5f9784e3-39f9-42cc-94ff-3e37c2b5a6bb
+{"id":"1955","employee_name":"berdia bulalauri","employee_salary":"100000000000","employee_age":"27","profile_image":"https://lyricstranslate.com/files/styles/large/public/1948%20mikhail%20shufutinsky%20RUS%20singer.jpg"}
+
+RESPONSE:
+{"success":{"text":"successfully! deleted Records"}}

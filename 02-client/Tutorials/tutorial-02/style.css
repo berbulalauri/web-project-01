@@ -1,0 +1,31 @@
+body {
+    margin-bottom: 5%;
+}
+
+.dropdown, .dropleft, .dropright, .dropup {
+    position: relative;
+    margin-left: 3%;
+}
+@media (min-width: 1300px){
+.container {
+    max-width: 96%;
+}	
+}	
+@media (min-width: 1400px){
+.container {
+    max-width: 96%;
+}	
+}
+@media (min-width: 1500px){
+.container {
+    max-width: 96%;
+}	
+}
+.progress {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.alert-classes {
+    margin-left: 2%;
+    margin-right: 2%;
+}
