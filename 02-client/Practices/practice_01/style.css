@@ -1,0 +1,158 @@
+body {
+	font-size: 14px;
+}
+.content-wrapper {
+	display: flex;
+}
+
+.left-side {
+	flex-basis: 16%;
+	margin-left:21%;
+	margin-right:13px;
+}
+.middle-side {
+	flex-basis: 16%;
+	margin-right:13px;
+}
+.right-side {
+	flex-basis: 16%;	
+	margin-right:21%;
+	margin-left:13px;
+}
+.text-side {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.white-unit {
+	height: 458px;
+    border: 1px solid darkblue;
+	border-radius: 20px;
+    background-color: #9ad9ea;
+	overflow: hidden;
+}
+.third-unit {
+	height: 254px;
+    border: 3px solid #00a3e0;
+    border-radius: 5px;
+	width:100%;
+}
+.green-blue-wrapper {
+	display: flex;
+	height: 200px;
+	margin-top: 0px;
+}
+.green-unit, .blue-unit {
+	flex-basis: 50%;
+}
+.green-unit {
+	margin: 7px;
+	background: greenyellow;
+	border-radius: 20px;
+}
+.blue-unit {
+	margin: 7px;
+	background: blue;
+}
+.form-group {
+    margin: 15px 0;
+}
+.form-group .form-label {
+	display: block;
+	font-weight: bold;
+}
+.form-control {
+    box-sizing: border-box;
+	width: 100%;
+    min-height: 30px;
+	margin-top: 10px;
+    padding: 0 10px;
+	background: #e8fbfd;
+    border: 1px solid #c8dee0;
+    border-radius: 5px;
+}
+.btn {
+	width: 100%;
+    font-size: 1em;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+.btn-primary {
+    background: green;
+    color: white;
+}
+
+.container {
+	background-color:#00a3e0;
+    padding-left: 15px;
+    padding-top: 3px;
+	border-radius: 8px;
+}
+#brand-header {
+	margin-bottom: 10px;
+	width: 70%;
+    position: relative;
+    left: 13%;
+}
+
+div#brand-footer {
+    height: 50px;
+    width: 70%;
+    background-color: darkblue;
+    margin-top: 7px;
+    border-radius: 9px;
+    position: relative;
+    left: 13%;
+}
+.currRate {
+    font-size: 15px;
+    font-family: Baskerville;
+    margin-left: 8px;
+}
+.exRatesText {
+    margin: 9%;
+    font-size: 14px;
+    font-family: fantasy;
+}
+
+button {
+    height: 40px;
+    position: relative;
+    margin: -20px -50px;
+    width: 120px;
+    top: 50%;
+    left: 42%;
+    background-color: blue;
+    border-radius: 7px;
+    border: 1px solid cyan;
+	color:white;
+}
+.rightsidebutton {
+float:right;
+}
+
+.newbuttoncontainer {
+    float: right;
+    position: relative;
+    top: 24px;
+    right: 17%;
+}
+.rightsidebutton {
+    width: 168px;
+    background-color: yellow;
+    border-radius: 2px;
+    color: black;
+    font-size: 19px;
+    height: 46px;
+}
+
+.h1designer {
+    float: left;
+    position: relative;
+    left: 44%;
+    top: -7px;
+	color:white;
+	font-size:24px;
+	font-style:normal;
+}

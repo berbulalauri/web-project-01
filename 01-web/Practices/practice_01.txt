@@ -1,0 +1,43 @@
+REQUEST FOR POST:
+POST /api/v1/create HTTP/1.1
+Host: dummy.restapiexample.com
+Content-Type: text/plain
+User-Agent: PostmanRuntime/7.20.1
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 54f46d1e-8045-4d21-8264-516c44376bac,23629861-fe7a-4626-96ff-e2dd5e150aea
+Host: dummy.restapiexample.com
+Accept-Encoding: gzip, deflate
+Content-Length: 68
+Connection: keep-alive
+cache-control: no-cache
+
+{"name":"berdiaBulalauri","salary":"1000000000000000000","age":"12"}
+
+RESPONSE:
+{"name":"berdiaBulalauri","salary":"1000000000000000000","age":"12","id":"12389"}
+
+
+REQUEST FOR GET:
+GET /api/v1/employee/12389 HTTP/1.1
+Host: dummy.restapiexample.com
+Content-Type: text/plain
+User-Agent: PostmanRuntime/7.20.1
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 2e7786cd-bcee-496d-8080-58e2265007b9,997cc517-b91c-4f09-a133-806cae985559
+Host: dummy.restapiexample.com
+Accept-Encoding: gzip, deflate
+Content-Length: 68
+Cookie: PHPSESSID=5add4b46454887bfa0ee033ca5e4e310; ezoadgid_133674=-1; ezoref_133674=; ezoab_133674=mod32; ezCMPCCS=true; active_template::133674=pub_site.1575411919
+Connection: keep-alive
+cache-control: no-cache
+
+{"name":"berdiaBulalauri","salary":"1000000000000000000","age":"12"}
+
+RESPONSE:
+{"id":"12389","employee_name":"berdiaBulalauri","employee_salary":"2147483647","employee_age":"12","profile_image":""}
+
+
+
+
