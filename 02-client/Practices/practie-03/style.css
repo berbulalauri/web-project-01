@@ -1,0 +1,187 @@
+body {
+    margin-bottom: 5%;
+}
+.dropdown, .dropleft, .dropright, .dropup {
+    position: relative;
+    margin-left: 3%;
+}
+
+.left-side, .right-side {
+	padding: 15px;
+}
+
+.sectionContainer {
+height:400px;
+}
+
+.left-side {position: relative;width: 30%;left: 12%;}
+.right-side {
+    width: 45%;
+    position: relative;
+    right: 6%;
+}
+
+section {
+  float: right;
+  width: 63%;
+}
+aside {
+  float: left;
+  width: 30%;
+}
+
+.textinput {
+    width: 51%;
+    min-height: 99px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+    position: relative;
+    left: 53px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    display: inline;
+}
+
+
+.progress {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.alert-classes {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.rightsidebutton {
+	
+    height: 40px;
+    position: relative;
+    margin: -20px -50px;
+    width: 120px;
+    top: 50%;
+    left: 42%;
+    background-color: blue;
+    border-radius: 7px;
+    border: 1px solid cyan;
+	color:white;
+	
+    width: 168px;
+    background-color: yellow;
+    border-radius: 2px;
+    color: black;
+    font-size: 19px;
+    height: 46px;
+}
+
+
+
+.container {
+	background-color:#00a3e0;
+    padding-left: 15px;
+    padding-top: 3px;
+	border-radius: 8px;
+}
+
+.h1designer {
+    float: left;
+    position: relative;
+    left: 44%;
+    top: 10px;
+    color:white;
+    font-size:24px;
+    font-style:normal;
+}
+
+#brand-header {
+	margin-bottom: 10px;
+	width: 70%;
+	position: relative;
+	left: 13%;
+	margin-top: 10px;
+}
+
+div#brand-footer {
+    height: 50px;
+    width: 70%;
+    background-color: darkblue;
+    margin-top: 7px;
+    border-radius: 9px;
+    position: relative;
+    left: 13%;
+}
+
+
+.rightsidebutton {
+float:right;
+}
+
+.newbuttoncontainer {
+    float: right;
+    position: relative;
+    top: 21px;
+    right: 17%;
+}
+
+
+div#b {
+    height: 100%;
+    width: 100%;
+    margin: 11px;
+}
+
+.form-control2 {
+    display: inline-flex;
+    width: 50%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+label.form-label-formessage {
+    position: relative;
+    bottom: 29px;
+    left: 12px;
+}
+input#useremail {
+    position: relative;
+    left: 30px;
+}
+input#username {
+    position: relative;
+    left: 28px;
+}
+button.btn.btn-primary {
+    position: relative;
+    top: 25px;
+    right: 25px;
+	background-color: #00a690;
+    border-color: #00a690;
+}
+label.label-feedback {
+    position: relative;
+    left: -13px;
+}
+
+.alert.alert-success {
+    margin: 0 auto;
+    width: 73%;
+    position: relative;
+    right: 2%;
+}
+
+.form-textarea {
+    margin: 0 auto;
+    width: 114%;
+    position: relative;
+    /* right: 2%; */
+}
