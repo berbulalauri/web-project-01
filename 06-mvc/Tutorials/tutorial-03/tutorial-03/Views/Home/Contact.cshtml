@@ -1,0 +1,20 @@
+﻿@model IEnumerable<tutorial_03.Models.Contact>
+<h1>Contact view</h1>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Phone</td>
+        <td>Positions</td>
+    </tr>
+    @foreach (var contact in Model)
+    {
+        <tr>
+            <td>@contact.Name</td>
+            <td>@contact.Phone</td>
+            <td>@contact.Position</td>
+        </tr>
+    }
+
+</table>
+
+<a href="@Url.Action("AddContact")"> Add new contanct</a>

@@ -1,0 +1,24 @@
+﻿<h1>Contact </h1>
+<div>
+    <form method="post" action="@Url.Action("Create")">
+        <div>
+            <label>Name: </label>
+            <input type="text"  name="name" />
+        </div>
+        <div>
+            <label>Phone: </label>
+            <input type="text" name="phone" />
+        </div>
+        <div>
+            <label>Position: </label>
+            <select name="position">
+                @foreach (var position in ViewData["positions"] as List<tutorial_03.Models.Position>)
+                {
+                    <option value="@position.Name">@position.Name</option>
+                }
+            </select>
+ 
+        </div>
+        <input type="submit" name="Create" />
+    </form>
+</div>
