@@ -11,24 +11,33 @@ namespace practice_02
 {
     public class Startup
     {
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-        public void ConfigureServices(IServiceCollection services)
-        {
-        }
-
+        public static int mm = 0;
+        public static List<Books> book;
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
+            book = new List<Books>
             {
-                app.UseDeveloperExceptionPage();
-            }
+                new Books{ Name ="William Shakespaere" , Author="Romea And Juliet", Year=1596 },
+                new Books{ Name ="Anton Checkov" , Author="three sister", Year=1900 },
+                new Books{ Name ="vladimir pushkin" , Author="poetry book", Year=1930 }
+
+                //new Books("William Shakespaere","Romea And Juliet",1596),
+                //new Books("Anton Checkov","three sister",1900),
+                //new Books("vladimir pushkin","poetry book",1930)
+            };
             app.Map("", Home);
         }
         private static void Home(IApplicationBuilder app)
         {
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("<div class=\"container\"><table style=\"margin-left:1%; margin-top:1%; border: 1px solid black;\" class=\"table\"><thead><tr><th>Name</th><th>Author</th><th>Release Year</th></tr></thead><tbody><tr><td>William Shekespaere</td><td>Romeo And Juliet</td><td>1597</td></tr><tr class=\"success\"><td>Anton Checkov</td><td>Three sister</td><td>1900</td></tr></tbody></table></div>");
+                await context.Response.WriteAsync($"<div class=\"container\"><table style=\"margin-left:1%; margin-top:1%; border: 1px solid black;\" class=\"table\"><thead><tr><th>Name</th><th>Author</th><th>Release Year</th></tr></thead><tbody>");
+                foreach (var item in book)
+                {
+                    await context.Response.WriteAsync($"<tr><td>{item.Author}</td><td>{item.Name}</td><td>{item.Year}</td></tr>");
+                }
+                await context.Response.WriteAsync($"</tbody></table></div>");
+
             });
         }
 
