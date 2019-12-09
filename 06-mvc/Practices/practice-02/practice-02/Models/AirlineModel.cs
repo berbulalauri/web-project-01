@@ -13,5 +13,6 @@ namespace practice_02.Models
         public int MaximumLuggageWeight { get; set; }
         public string AirlineFoundingCity { get; set; }
         public bool  IsInternational{ get; set; }
+
     }
 }

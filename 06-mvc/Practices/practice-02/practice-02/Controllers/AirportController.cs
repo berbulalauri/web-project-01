@@ -14,12 +14,15 @@ namespace practice_02.Controllers
 
     public class AirportController : Controller
     {
-        string json;
         string FilePath = "E:/myjson.json";
         
         IAirportService _contactService;
 
-        
+        List<AirportNameModel> AirportModelList = new List<AirportNameModel>(); 
+        List<AirportNameModel> _airportname = new List<AirportNameModel>
+        {
+         new AirportNameModel("IStanbul AtaTurk Airport"),
+        };
         public AirportController(IAirportService contactService)
         {
             _contactService = contactService;
@@ -29,6 +32,10 @@ namespace practice_02.Controllers
         [Route("Airport/Get")]
         public IActionResult GetAllAiproprts()
         {
+            //ViewData["positions"] = _airportname;
+            //var model = _contactService.GetAirport();
+            //return View();
+
             var model = _contactService.GetAirport();
             return View(model);
         }
@@ -37,23 +44,52 @@ namespace practice_02.Controllers
         [HttpGet("/Airport/Create")]
         public IActionResult AddAirport()
         {
-            ViewData["positions"] = AirlineController._positions;
+            List<Position> _FromAirlinePositions;
+            List<Position> _AirlineSecondList = new List<Position>();
+            string AirlineFilePath = "E:/myAirLineJson.json";
+
+            var dataFromFile = System.IO.File.ReadAllText(AirlineFilePath);
+            var data = JsonConvert.DeserializeObject<List<AirlineModel>>(dataFromFile);
+            for (int i = 0; i < data.Count; i++)
+            {
+                _AirlineSecondList.Add(new Position(data[i].AirlineName));
+            }
+            _FromAirlinePositions = _AirlineSecondList;
+
+            ViewData["positions"] = _FromAirlinePositions;
+            //ViewData["positions"] = AirlineController._positions;
             return View();
         }
+
         [HttpPost("saveAirport")]
         public IActionResult Create(AirportModel contact)
         {
-            AirportModel mycontact = new AirportModel
+            AirportModel myAirportModel = new AirportModel
             {
                 Name = contact.Name,
                 City = contact.City,
                 IsInternational = contact.IsInternational
             };
-            json = JsonConvert.SerializeObject(mycontact);
-            using (StreamWriter writer = new StreamWriter(FilePath, true))
+            if (!System.IO.File.Exists(FilePath))
             {
-                writer.Write(json);
+                using (StreamWriter writer = new StreamWriter(FilePath, true))
+                {
+                    writer.Write("[]");
+                }
             }
+            var AirportDataFromFile = System.IO.File.ReadAllText(FilePath);
+            var listOfAirport = JsonConvert.DeserializeObject<List<AirportModel>>(AirportDataFromFile);
+            listOfAirport.Add(myAirportModel);
+            var convertedJsonFromAirport = JsonConvert.SerializeObject(listOfAirport, Formatting.Indented);
+            System.IO.File.WriteAllText(FilePath, convertedJsonFromAirport);
+
+            var AirportJsonDeserData = JsonConvert.DeserializeObject<List<AirportModel>>(convertedJsonFromAirport);
+            for (int i = 0; i < AirportJsonDeserData.Count; i++)
+            {
+                AirportModelList.Add(new AirportNameModel(AirportJsonDeserData[i].Name));
+            }
+            _airportname = AirportModelList;
+
             _contactService.AddAirport(contact);
             return View("GetAllAiproprts", _contactService.GetAirport());
         }

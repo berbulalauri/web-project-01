@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 namespace practice_02.Models
 {
     [Serializable]
-    public class AirportModel
+    public class AirportNameModel
     {
         public string Name { get; set; }
-        public string  City { get; set; }
-        public bool  IsInternational{ get; set; }
-        public string Position { get; set; }
-
+        public AirportNameModel(string name)
+        {
+            Name = name;
+        }
     }
 }
