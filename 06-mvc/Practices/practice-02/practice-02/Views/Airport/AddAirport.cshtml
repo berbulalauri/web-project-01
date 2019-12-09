@@ -19,11 +19,11 @@
     </div>
     <div class="form-check" style="">
         <label class="form-check-label" for="exampleCheck1">Is International</label>
-        <input type="checkbox" name="isinternational" class="form-check-input" id="exampleCheck1" style="position: absolute; left: 19%;">
+        <input type="checkbox" name="isinternational" value="true" class="form-check-input" id="exampleCheck1" style="position: absolute; left: 19%;">
     </div>
 
     <div>
-        <label>Position: </label>
+        <label>Airline: </label>
         <select name="position" class="btn btn-secondary dropdown-toggle">
             @foreach (var position in ViewData["positions"] as List<practice_02.Models.Position>)
             {

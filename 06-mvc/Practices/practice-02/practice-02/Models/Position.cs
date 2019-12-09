@@ -12,7 +12,6 @@ namespace practice_02.Models
         public Position(string name)
         {
             Name = name;
-
         }
 
     }

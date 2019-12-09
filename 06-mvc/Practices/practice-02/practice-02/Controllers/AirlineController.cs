@@ -14,16 +14,16 @@ namespace practice_02.Controllers
 
     public class AirlineController : Controller
     {
-        string json;
-        string FilePath = "E:/myAirLineJson.json";
-        
         IAirlineService _contactService;
-
+        
+        string FilePath = "E:/myAirLineJson.json";
+        List<Position> nnn = new List<Position>();
         public static List<Position> _positions = new List<Position>
         {
          new Position("WizzAir Hungary Airline"),
          new Position("RainAir Ireland Airline"),
         };
+
         public AirlineController(IAirlineService contactService)
         {
             _contactService = contactService;
@@ -54,19 +54,37 @@ namespace practice_02.Controllers
                 AirlineFoundingCity = contact.AirlineFoundingCity,
                 IsInternational = contact.IsInternational
             };
-
-            _positions = new List<Position>
+            if (!System.IO.File.Exists(FilePath))
             {
-             new Position("WizzAir Hungary Airline"),
-             new Position("RainAir Ireland Airline"),
-             new Position(contact.AirlineName)
-            };
+                using (StreamWriter writer = new StreamWriter(FilePath, true))
+                {
+                    writer.Write("[]");
+                }
+            }
+            var dataFromFile = System.IO.File.ReadAllText(FilePath);
+            var list = JsonConvert.DeserializeObject<List<AirlineModel>>(dataFromFile);
+            list.Add(mycontact);
+            var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
+            System.IO.File.WriteAllText(FilePath, convertedJson);
 
-            json = JsonConvert.SerializeObject(mycontact);
-            using (StreamWriter writer = new StreamWriter(FilePath, true)) { writer.Write(json+","); }
+            var data = JsonConvert.DeserializeObject<List<AirlineModel>>(convertedJson);
+            for (int i = 0; i < data.Count; i++)
+            {
+                nnn.Add(new Position(data[i].AirlineName));
+            }
+            _positions = nnn;
 
             _contactService.AddAirline(contact);
             return View("GetAllAirline", _contactService.GetAirline());
         }
     }
 }
+
+/*
+_positions = new List<Position>
+{
+ new Position("WizzAir Hungary Airline"),
+ new Position("RainAir Ireland Airline"),
+ new Position(contact.AirlineName)
+};
+*/
