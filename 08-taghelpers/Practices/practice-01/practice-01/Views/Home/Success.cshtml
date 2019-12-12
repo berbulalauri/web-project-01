@@ -1,0 +1,16 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+@model IEnumerable<practice_01.Models.AccountInfo>
+<div class="container">
+<h1>
+    UserName: @Model.Last().UserName Password: @Model.Last().Password printed @Model.Last().ClientId times
+</h1>
+
+</div>
+
+
+<div class="submitButtonCentered" style="display: inline-block; position: relative; left: 17%; top: 10px;">
+    <a class="btn btn-primary" role="button" href="@Url.Action("AddAccount")" style="color:inherit">Create New</a>
+    <a class="btn btn-primary" role="button" href="~/Index" style="color:inherit">Back</a>
+</div>
