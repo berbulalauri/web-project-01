@@ -1,0 +1,52 @@
+[
+  {
+    "AccountGuidId": "cccd58c2-be9a-416d-94db-2339282d68b5",
+    "FirstName": "Berdia",
+    "LastName": "Garmany",
+    "CourseCount": 12,
+    "BirthDate": "2019-12-20T01:01:00",
+    "Email": "B@bulalaur.co",
+    "Password": "asASDS#@12",
+    "PhoneNumber": 123616,
+    "Disciplines": [
+      "C++",
+      "HTML / CSS",
+      "Java Script"
+    ],
+    "Autobiography": "Welcome Berdia Garmany Information Section Welcome Berdia Garmany Information Section"
+  },
+  {
+    "AccountGuidId": "c19d5753-27a2-4779-8c31-e0e03a043738",
+    "FirstName": "Bdsaerds",
+    "LastName": "Bdsewdsaw",
+    "CourseCount": 12,
+    "BirthDate": "2019-12-27T11:11:00",
+    "Email": "das@dsaweqw.com",
+    "Password": "ASsd#@@3",
+    "PhoneNumber": 123456789,
+    "Disciplines": [
+      "C#",
+      "C++",
+      "HTML / CSS",
+      "Java Script"
+    ],
+    "Autobiography": "Autobiography AutobiographyAutobiography AutobiographyAutobiography Autobiography"
+  },
+  {
+    "AccountGuidId": "6492d084-1c35-4b99-8df1-8198e0826092",
+    "FirstName": "Bdsadsaeq",
+    "LastName": "Dqwedw",
+    "CourseCount": 12,
+    "BirthDate": "2019-12-16T11:11:00",
+    "Email": "das@dsaweqw.com",
+    "Password": "gaGAEW1212!@",
+    "PhoneNumber": 514131411,
+    "Disciplines": [
+      "C#",
+      "C++",
+      "HTML / CSS",
+      "Java Script"
+    ],
+    "Autobiography": "Welcome Bdsadsaeq Dqwedw\r\nAddtional Information Section\r\nPhoneNumberWelcome Bdsadsaeq Dqwedw\r\nAddtional Information Section\r\nPhoneNumberWelcome Bdsadsaeq Dqwedw\r\nAddtional Information Section\r\nPhoneNumber"
+  }
+]

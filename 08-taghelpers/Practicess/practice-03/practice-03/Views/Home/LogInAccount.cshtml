@@ -1,0 +1,44 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+@model practice_03.Models.ValidateUsers
+
+@{
+    ViewData["Title"] = "loginchecker";
+}
+<header>
+    @{
+        await Html.RenderPartialAsync("../PartialViews/_NavigationPartials.cshtml", new Dictionary<string, string> { { "AddAccount", "Registration" }, { "Index", "home" } });
+    }
+</header>
+
+<div class="row">
+<div class="col-md-4">
+    <h1>LogIn Info</h1>
+    <form asp-action="LogInChecker">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="UserName" class="control-label"></label>
+            <input asp-for="UserName" class="form-control" />
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password" class="control-label"></label>
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn btn-primary" />
+            <a class="btn btn-primary" role="button" href="~/Index" style="color:inherit">Back</a>
+        </div>
+    </form>
+</div>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

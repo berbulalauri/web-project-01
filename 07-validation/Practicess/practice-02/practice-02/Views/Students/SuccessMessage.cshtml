@@ -1,0 +1,47 @@
+﻿@{
+}
+@model StudentInformation
+    <h1>
+        @ViewData["message"]
+    </h1>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Addtional Information Section</h2>
+        <form asp-action="AddtionalInfoAction">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Disciplines" class="control-label">Which Discipline Do You Study Before?</label>
+                <select asp-for="Disciplines" style="width: 150px; height: 115px; /* overflow-y: hidden; */ border-radius: 3px;" multiple>
+                    <option value="C#">C#</option>
+                    <option value="C++">C++</option>
+                    <option value="HTML / CSS">HTML / CSS</option>
+                    <option value="Java Script">Java Script</option>
+                    <option value="Python">Python</option>
+                </select>
+                <span asp-validation-for="Disciplines" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Autobiography" class="control-label"></label>
+                <textarea asp-for="Autobiography" rows="5" cols="50" class="form-control"></textarea>
+                <span asp-validation-for="Autobiography" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="submit" class="btn btn-primary" />
+                <a class="btn btn-primary" role="button" href="~/Index" style="color:inherit">Back</a>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,23 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+@model IEnumerable<practice_02.Models.AccountInfo>
+
+<header>
+    @{
+        await Html.RenderPartialAsync("../PartialViews/_NavigationPartials.cshtml", new Dictionary<string, string> { { "AddAccount", "Registration" }, { "LogInAccount", "Log In" } });
+    }
+</header>
+
+<div class="container">
+<h1>
+    Account: @Model.Last().UserName was Created with ID: @Model.Last().ClientId
+</h1>
+
+</div>
+
+
+<div class="submitButtonCentered" style="display: inline-block; position: relative; left: 17%; top: 10px;">
+    <a class="btn btn-primary" role="button" href="@Url.Action("AddAccount")" style="color:inherit">Add New Account</a>
+    <a class="btn btn-primary" role="button" href="~/Index" style="color:inherit">Back</a>
+</div>

@@ -1,0 +1,51 @@
+[
+  {
+    "ClientId": "7a3a4f74-d386-4ee1-a2f4-94f45dce792a",
+    "UserName": "google",
+    "Password": "asAS!@12",
+    "CodeQuestion": "What is your favorite color?",
+    "CodeAnswer": "yello"
+  },
+  {
+    "ClientId": "bb2cf292-3304-404d-b58d-ae267e3079aa",
+    "UserName": "facebook",
+    "Password": "ASqw12!@",
+    "CodeQuestion": "What town were you born in?",
+    "CodeAnswer": "rustavi"
+  },
+  {
+    "ClientId": "21e2f023-dc54-43bd-a932-95c096764fd8",
+    "UserName": "cisco",
+    "Password": "sdSD!@12",
+    "CodeQuestion": "What is your favorite color?",
+    "CodeAnswer": "red"
+  },
+  {
+    "ClientId": "69fe777a-e667-40c2-8448-55ac3bd36c58",
+    "UserName": "bogge",
+    "Password": "sdSD!@12",
+    "CodeQuestion": "What is your mother's maiden name?",
+    "CodeAnswer": "tata"
+  },
+  {
+    "ClientId": "7f4d03c1-32f5-4fb5-a7a8-d5adfee2b967",
+    "UserName": "angryyybird",
+    "Password": "sdSD@#23",
+    "CodeQuestion": "What is your favorite color?",
+    "CodeAnswer": "yellowww"
+  },
+  {
+    "ClientId": "5bdcb55b-b87c-4d49-8fb9-ec1d1daac382",
+    "UserName": "giorgio",
+    "Password": "asSD!@12",
+    "CodeQuestion": "What was the name of your first pet?",
+    "CodeAnswer": "birdyy"
+  },
+  {
+    "ClientId": "97525874-9643-4bee-a555-402cd29c50c0",
+    "UserName": "tatata",
+    "Password": "gaGA!@12",
+    "CodeQuestion": "What town were you born in?",
+    "CodeAnswer": "tarada"
+  }
+]

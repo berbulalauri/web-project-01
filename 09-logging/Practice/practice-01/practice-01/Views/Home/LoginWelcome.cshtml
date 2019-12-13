@@ -1,0 +1,23 @@
+﻿
+@model IEnumerable<practice_01.Models.AccountInfo>
+
+<header>
+    @{
+        await Html.RenderPartialAsync("../PartialViews/_successfulLogin.cshtml");
+    }
+</header>
+
+<div class="container">
+    <h1>
+        Congretulation @Model.Last().UserName !
+    </h1>
+    <br>
+    <h1>
+        YOU HAVE SUCCESFULLY LOGGED IN!
+    </h1>
+    
+</div>
+
+
+<div class="submitButtonCentered" style="display: inline-block; position: relative; left: 17%; top: 10px;">
+</div>
