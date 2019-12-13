@@ -1,0 +1,29 @@
+﻿
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+    li.nav-item:last-child {
+        position: absolute;
+        right: 20px;
+    }
+
+    nav.navbar.navbar-expand-sm.navbar-toggleable-sm.navbar-light.border-bottom.box-shadow.mb-3 {
+        background-color: #1f5ac5 !important;
+    }
+</style>
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+    <div class="container">
+        
+        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary" asp-area="" asp-controller="Home" asp-action="LogInAccount">Log In</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>

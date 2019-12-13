@@ -1,0 +1,32 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+@model IEnumerable<practice_01.Models.AccountInfo>
+<div class="container">
+    <h1>Account List</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>UserName</td>
+                <td>Question</td>
+                <td>Answer</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var contact in Model)
+            {
+                <tr>
+                    <td>@contact.UserName</td>
+                    <td>@contact.CodeQuestion</td>
+                    <td>@contact.CodeAnswer</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<div class="submitButtonCentered" style="display: inline-block; position: relative; left: 17%; top: 10px;">
+    <a class="btn btn-primary" role="button" href="@Url.Action("AddAccount")" style="color:inherit">Registration</a>
+    <a class="btn btn-primary" role="button" href="~/Index" style="color:inherit">Back</a>
+</div>
