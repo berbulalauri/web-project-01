@@ -1,0 +1,24 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+@model IEnumerable<practice_02.Models.AccountInfo>
+<header>
+    @{
+        await Html.RenderPartialAsync("../PartialViews/_NavigationPartials.cshtml", new Dictionary<string, string> { { "AddAccount", "Registration" }, { "LogInAccount", "Log In" } });
+    }
+</header>
+
+<div class="container">
+    <h1>
+        USERNAME AND/OR PASSWORD IS INCORRECT.
+    </h1>
+    <br>
+    <h1>
+        PLEASE TRY AGAIN!
+    </h1>
+
+</div>
+
+
+<div class="submitButtonCentered" style="display: inline-block; position: relative; left: 17%; top: 10px;">
+</div>

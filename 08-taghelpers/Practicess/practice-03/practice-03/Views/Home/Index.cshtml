@@ -1,0 +1,14 @@
+﻿
+<header>
+    @{
+        await Html.RenderPartialAsync("../PartialViews/_NavigationPartials.cshtml", new Dictionary<string, string> {{ "AddAccount", "Registration" }, { "LogInAccount", "Log In" }  });
+    }
+</header>
+
+<div class="card text-center" style="">
+    <div class="card-body">
+        <h1 style="margin-left: 2%;margin-right: 2%;">Welcome!!</h1>
+        <a class="btn btn-primary" role="button" href="~/Home/Get" style="color:inherit">See All Accounts</a>
+        <a class="btn btn-primary" href="~/Home/Create" style="color:inherit">Create New Accounts</a>
+    </div>
+</div>
