@@ -1,0 +1,14 @@
+﻿@model IEnumerable<practice_01.Models.Student>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<h1>
+    Welcome @Model.Last().FirstName @Model.Last().LastName !
+</h1>
+<h1>
+    YOU HAVE SUCCESFULLY REGISTERED!
+</h1>

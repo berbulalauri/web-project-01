@@ -1,0 +1,21 @@
+﻿
+@model IEnumerable<practice_03.Models.AccountInfo>
+
+<header>
+    @{
+        await Html.RenderPartialAsync("../PartialViews/_successfulRegister.cshtml");
+    }
+</header>
+
+<div class="container">
+<h1>
+    Account: @Model.Last().UserName was Created with 
+</h1>
+<h1>
+    id: @Model.Last().ClientId
+</h1>
+
+</div>
+
+<div class="submitButtonCentered" style="display: inline-block; position: relative; left: 17%; top: 10px;">
+</div>
