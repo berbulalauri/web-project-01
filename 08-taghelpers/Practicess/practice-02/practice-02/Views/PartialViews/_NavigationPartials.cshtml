@@ -1,20 +1,6 @@
-﻿@model Dictionary<string, string>
+﻿@model Dictionary<string,string>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-<style>
-    li.nav-item:last-child {
-        position: absolute;
-        right: 20px;
-    }
-
-    nav.navbar.navbar-expand-sm.navbar-toggleable-sm.navbar-light.border-bottom.box-shadow.mb-3 {
-        background-color: #1f5ac5 !important;
-    }
-</style>
-
-<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container">
         <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">tutorial_02</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -26,7 +12,7 @@
                 @foreach (var item in Model)
                 {
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary " asp-area="" asp-controller="Home" asp-action="@item.Key">@item.Value</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@item.Key">@item.Value</a>
                     </li>
                 }
 

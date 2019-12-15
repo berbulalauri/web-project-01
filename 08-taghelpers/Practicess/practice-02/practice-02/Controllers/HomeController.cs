@@ -16,7 +16,7 @@ namespace practice_02.Controllers
 
     public class HomeController : Controller
     {
-    string FilePath = "AccountListJson.json";
+    string FilePath = "myjsonAccountSuccess.json";
     IAccountInfoService _contactService;
     public HomeController(IAccountInfoService contactService)
     {
@@ -56,12 +56,26 @@ namespace practice_02.Controllers
     [HttpPost("Home/Welcome")]
     public IActionResult LogInChecker(ValidateUsers accountContent)
     {
-        AccountInfo myvalidAccount = new AccountInfo
+        string validFilePath = "ValidateUsersJsonFile.json";
+        ValidateUsers myvalidAccount = new ValidateUsers
         {
             UserName = accountContent.UserName,
             Password = accountContent.Password
         };
-      
+        if (!System.IO.File.Exists(validFilePath))
+        {
+            using (StreamWriter writer = new StreamWriter(validFilePath, true))
+            {
+                writer.Write("[]");
+            }
+        }
+
+        var dataFromFile = System.IO.File.ReadAllText(validFilePath);
+        var list = JsonConvert.DeserializeObject<List<ValidateUsers>>(dataFromFile);
+        list.Add(myvalidAccount);
+        var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
+        System.IO.File.WriteAllText(validFilePath, convertedJson);
+
         var dataUserAccounts = System.IO.File.ReadAllText(FilePath);
         var listFromUserAccounts = JsonConvert.DeserializeObject<List<AccountInfo>>(dataUserAccounts);
             for (int i = 0; i < listFromUserAccounts.Count; i++)
@@ -70,7 +84,6 @@ namespace practice_02.Controllers
                 {
                     if (listFromUserAccounts[i].Password == accountContent.Password)
                     {
-                        _contactService.AddAccountInfo(myvalidAccount);
                         return View("LoginWelcome", _contactService.GetAccountInfo());
                     }
                 }

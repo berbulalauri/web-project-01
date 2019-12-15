@@ -6,14 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Views\PartialViews\style.css" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Views\Home\style.css" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="Views\PartialViews\_NavigationPartials.cshtml" />
   </ItemGroup>
 
