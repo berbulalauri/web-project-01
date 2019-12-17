@@ -1,0 +1,70 @@
+﻿@model IEnumerable<PlannerProject.Models.Car>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDateTime)
+            </th>
+            <th>
+                <h6>Duration</h6>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            @if (item.EndDateTime < @DateTime.Now.Date.AddHours(48))
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Convert.ToDateTime(item.StartDateTime).ToString("hh:mm")
+                </td>
+                <td>
+                    @Convert.ToDateTime(item.EndDateTime).ToString("hh:mm")
+                </td>
+                <td>
+                    @{ 
+                        var mytime = new TimeSpan(1, 0, 0);
+                        var difference = item.EndDateTime.Subtract(item.StartDateTime);
+
+                        var hourConverter = String.Format("{0:0.00}", Convert.ToDouble(difference.TotalHours));
+                        var finalHour = (difference.TotalHours % (int)difference.TotalHours) == 0 ? Convert.ToString(difference.TotalHours) : hourConverter;
+
+                        var minuteConverter = String.Format("{0:0.00}", Convert.ToDouble(difference.TotalMinutes));
+                        var finalMinute = (difference.TotalMinutes % (int)difference.TotalMinutes) == 0 ? Convert.ToString(difference.TotalMinutes) : minuteConverter;
+
+                        var Duration = (difference > mytime) ? $"{finalHour} Hours" : $"{finalMinute} minutes";
+                    }
+                    @Duration
+                </td>
+            </tr>
+        }
+        }
+    </tbody>
+</table>
